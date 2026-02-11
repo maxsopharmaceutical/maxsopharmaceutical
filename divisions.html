@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxso Pharmaceutical</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+    <!-- Logo + Company Name -->
+    <div class="flex items-center gap-3">
+      <img src="logo.jpg" 
+           alt="Maxso Logo"
+           class="w-12 h-12 object-contain">
+      <h1 class="text-2xl font-bold text-blue-700">
+        Maxso Pharmaceutical
+      </h1>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <a href="index.html" class="hover:text-blue-700">Home</a>
+      <a href="about.html" class="hover:text-blue-700">About</a>
+      <a href="products.html" class="hover:text-blue-700">Products</a>
+<a href="divisions.html" class="text-blue-700 font-semibold hover:text-blue-700">divisions</a>
+      <a href="service.html" class="hover:text-blue-700">Service</a>
+      <a href="contact.html" class="hover:text-blue-700">Contact</a>
+    </nav>
+
+    <!-- Mobile Kebab Button -->
+    <button id="menu-btn" class="md:hidden text-3xl text-blue-700">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 font-medium text-gray-700">
+    <a href="index.html" class="block">Home</a>
+    <a href="about.html" class="block">About</a>
+    <a href="products.html" class="block">Products</a>
+     <a href="divisions.html" class="text-blue-700 font-semibold>divisions</a>
+    <a href="service.html" class="block">Service</a>
+    <a href="contact.html" class="block">Contact</a>
+  </div>
+</header>
+
+<!-- Script for Mobile Menu -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+    </script>
+
+<!-- HERO / DIVISIONS -->
+<section class="bg-gray-50 py-20">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl font-bold text-blue-700 mb-10">
+      Our Divisions
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold text-pink-700 mb-4">Neuro-Psychiatric</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Developing innovative solutions to support mental well-being, neurological and mental health, empowering patients to lead healthier and more balanced lives.        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold text-teal-700 mb-4">General Medicine</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Comprehensive solutions for common health conditions, promoting overall wellness and supporting day-to-day healthcare needs.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold text-violet-700 mb-4">Diabetology</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Specialized care products aimed at managing and supporting metabolic and diabetic healthcare through safe, reliable formulations.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold text-orange-700 mb-4">Gastroenterology</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Targeted treatments for digestive and gastrointestinal health, helping maintain comfort and proper digestive function.
+        </p>
+      </div>
+<!-- Nephrology -->
+<div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+  <h3 class="text-xl font-bold text-blue-700 mb-4">Nephrology</h3>
+  <p class="text-gray-600 leading-relaxed">
+    Specialized medicines for kidney-related conditions, including chronic kidney disease, dialysis support, and renal care management.
+  </p>
+</div>
+
+<!-- Cardiology -->
+<div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+  <h3 class="text-xl font-bold text-red-600 mb-4">Cardiology</h3>
+  <p class="text-gray-600 leading-relaxed">
+    Advanced cardiac medications for heart health, blood pressure control, cholesterol management, and cardiovascular disease treatment.
+  </p>
+</div>
+
+<!-- Dermatology -->
+<div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+  <h3 class="text-xl font-bold text-pink-600 mb-4">Dermatology</h3>
+  <p class="text-gray-600 leading-relaxed">
+    Effective skincare and dermatology solutions for acne, eczema, psoriasis, fungal infections, and other skin-related conditions.
+  </p>
+</div>
+
+<!-- ENT -->
+<div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+  <h3 class="text-xl font-bold text-green-600 mb-4">ENT</h3>
+  <p class="text-gray-600 leading-relaxed">
+    Reliable treatments for ear, nose, and throat conditions including sinus infections, allergies, throat disorders, and respiratory care.
+  </p>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUALITY -->
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-6">Quality Commitment</h2>
+    <p class="text-lg text-gray-600 leading-relaxed">
+     At Maxso Pharmaceutical, quality is our top priority. We partner with carefully selected manufacturers who adhere to strict regulatory standards and industry best practices. Our commitment to ethical marketing and responsible operations ensures that every product we offer is safe, reliable, and designed to earn the trust of healthcare professionals and patients alike.
+
+    </p>
+  </div>
+</section>
+
+<!-- CAREERS -->
+<section class="bg-gray-50 py-20">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-6">Careers at Maxso Pharmaceutical</h2>
+    <p class="text-lg text-gray-600 leading-relaxed">
+     We provide a dynamic and growth-focused environment where innovation, integrity, and collaboration guide our mission to improve healthcare.
+
+We offer opportunities in sales, marketing, business development, product management, regulatory support, and operations, allowing talented individuals to contribute meaningfully from day one.
+
+By joining Maxso Pharma, you become part of a passionate, responsible, and forward-looking company—gaining professional growth while helping shape a positive future in healthcare.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gradient-to-r from-slate-900 to-slate-800 text-gray-300 pt-14 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="logo.jpg" class="w-12 h-12 rounded-lg" alt="Maxso Logo">
+        <div>
+          <h2 class="text-white text-xl font-bold">Maxso</h2>
+          <p class="text-sm text-gray-400">Pharmaceutical</p>
+        </div>
+      </div>
+      <p class="text-sm text-gray-400">
+        Your trusted partner in health and wellness since 2025.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-white">Home</a></li>
+        <li><a href="about.html" class="hover:text-white">About</a></li>
+        <li><a href="services.html" class="hover:text-white">Services</a></li>
+        <li><a href="products.html" class="hover:text-white">Products</a></li>
+        <li><a href="divisions.html" class="hover:text-white">Division</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold mb-4">Contact Info</h3>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-3 items-start">
+          📞 <span>9840991928/ +91 44 4691 1364</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          📧 <span>maxsopharmaceutical@gmail.com</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          📍 <span>No a-1, 18th Street, Nehru Colony, Pazhavanthangal, Chennai-600114, India</span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-white font-semibold mb-4">Hours</h3>
+      <p class="text-sm">Mon–Fri: 8 AM – 8 PM</p>
+      <p class="text-sm">Sat–Sun: 9 AM – 6 PM</p>
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
+    © 2025 Maxso Pharmaceutical. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
+
+

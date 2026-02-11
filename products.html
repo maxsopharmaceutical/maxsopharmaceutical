@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products – Maxso Pharmaceutical</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+    <!-- Logo + Company Name -->
+    <div class="flex items-center gap-3">
+      <img src="logo.jpg" 
+           alt="Maxso Logo"
+           class="w-12 h-12 object-contain">
+      <h1 class="text-2xl font-bold text-blue-700">
+        Maxso Pharmaceutical
+      </h1>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <a href="index.html" class="hover:text-blue-700">Home</a>
+      <a href="about.html" class="hover:text-blue-700">About</a>
+      <a href="products.html" class="text-blue-700 font-semibold hover:text-blue-700">Products</a>
+<a href="divisions.html" class="hover:text-blue-700">divisions</a>
+      <a href="service.html" class="hover:text-blue-700">Service</a>
+      <a href="contact.html" class="hover:text-blue-700">Contact</a>
+    </nav>
+
+    <!-- Mobile Kebab Button -->
+    <button id="menu-btn" class="md:hidden text-3xl text-blue-700">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 font-medium text-gray-700">
+    <a href="index.html" class="block">Home</a>
+    <a href="about.html" class="block">About</a>
+    <a href="products.html" class="text-blue-700 font-semibold">Products</a>
+     <a href="divisions.html" class="block">divisions</a>
+    <a href="service.html" class="block">Service</a>
+    <a href="contact.html" class="block">Contact</a>
+  </div>
+</header>
+
+<!-- Script for Mobile Menu -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+    </script>
+
+<!-- PRODUCTS -->
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h1 class="text-4xl font-bold text-blue-700 mb-10">Our Products</h1>
+
+<div class="flex justify-center gap-4 mb-12 flex-wrap">
+    <button class="category-btn px-4 py-2 rounded bg-blue-600 text-gray" data-category="all">All</button>
+    <button class="category-btn px-4 py-2 rounded bg-gray-200" data-category="vitamins">Vitamins</button>
+    <button class="category-btn px-4 py-2 rounded bg-gray-200" data-category="Psychiatry">Psychiatry</button>
+    <button class="category-btn px-4 py-2 rounded bg-gray-200" data-category="gastric">Gastric</button>
+    <button class="category-btn px-4 py-2 rounded bg-gray-200" data-category="sleep">Sleep</button>
+    <button class="category-btn px-4 py-2 rounded bg-gray-200" data-category="neurology">Neurology</button>
+    <button class="category-btn px-4 py-2 rounded bg-gray-200" data-category="neuropathy">Neuropathy</button>
+    <button class="category-btn px-4 py-2 rounded bg-gray-200" data-category="vertigo">Vertigo</button>
+    <button class="category-btn px-4 py-2 rounded bg-gray-200" data-category="ENT">ENT</button>
+  </div>
+
+  <!-- PRODUCTS GRID -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Maxsovit -->
+    <div class="product-card vitamins Psychiatry bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="maxsovit carton (3) (1)~3.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Maxsovit</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        Improves nerve function, ensures normal body metabolism,
+        prevents oxidative stress, boosts immunity and stamina.
+      </p>
+    </div>
+
+    <!-- Pantblu -->
+    <div class="product-card gastric bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="pantblu carton (3) (1)~2.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Pantblu Tablets</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        Controls acid reflux, improves gastric emptying,
+        reduces bloating and nausea.
+      </p>
+    </div>
+
+    <!-- Zolpidoze M-5 -->
+    <div class="product-card sleep Psychiatry bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="Zolpidoze M-5.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Zolpidoze M-5</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        Helps initiate and maintain sleep,
+        improves sleep quality and treats insomnia.
+      </p>
+    </div>
+
+    <!-- Zolpidoze M-10 -->
+    <div class="product-card sleep Psychiatry bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="Zolpidoze M-10.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Zolpidoze M-10</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        Helps initiate and maintain sleep,
+        improves sleep quality and treats insomnia.
+      </p>
+    </div>
+
+    <!-- Divalmax 250 -->
+    <div class="product-card neurology Psychiatry bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="dival max od 250 (1)~2.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Divalmax OD 250</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        Used in seizures, bipolar disorder and migraine prevention
+        by reducing abnormal electrical activity in the brain.
+      </p>
+    </div>
+
+    <!-- Divalmax 500 -->
+    <div class="product-card neurology Psychiatry bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="dival max od 500 (1)~2.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Divalmax OD 500</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        Produces calming effect on brain
+        and effectively prevents migraine symptoms.
+      </p>
+    </div>
+
+    <!-- Vertimind 8 -->
+    <div class="product-card vertigo neurology ENT bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="Vertimind-8.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Vertimind 8 mg</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        Improves cochlear and cerebral circulation
+        and treats peripheral vertigo.
+      </p>
+    </div>
+
+    <!-- Vertimind 16 -->
+    <div class="product-card vertigo neurology ENT bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="Vertimind-16 Carton (3).jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Vertimind 16 mg</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        Helps control endolymphatic pressure
+        and reduces vertigo symptoms.
+      </p>
+    </div>
+
+    <!-- Vertimind 24 -->
+    <div class="product-card vertigo neurology ENT bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="Vertimind-24 Carton (3).jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Vertimind 24 mg</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        Reduces Meniere’s disease symptoms,
+        relieves spinning sensation
+        and protects hearing.
+      </p>
+    </div>
+
+    <!-- Benfolev Forte -->
+    <div class="product-card neuropathy Psychiatry neurology vitamins bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="benfolev forte (1) (1)~2.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Benfolev Forte</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        Helps initiate and maintain sleep,
+        improves sleep quality and treats insomnia.
+      </p>
+    </div>
+
+    <!-- Vasofresh 40 -->
+    <div class="product-card neurology Psychiatry ENT bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="IMG-20260201-WA0005 (1)~2.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Vasofresh Tablets</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        vasofresh 40 mg tablet contains Propranolol, a beta-blocker used to treat high blood pressure, reduce heart-related chest pain, manage irregular heart rhythms, prevent migraines, and reduce essential tremors.
+      </p>
+    </div>
+
+    <!-- Vasofresh 20 -->
+    <div class="product-card neurology Psychiatry ENT bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="IMG-20260209-WA0006~2.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Vasofresh Tablets</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        vasofresh 20 mg tablet contains Propranolol, a beta-blocker used to treat high blood pressure, reduce heart-related chest pain, manage irregular heart rhythms, prevent migraines, and reduce essential tremors.
+      </p>
+    </div>
+
+    <!-- Vasofresh 10 -->
+    <div class="product-card neurology Psychiatry ENT bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="IMG-20260209-WA0007~2.jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Vasofresh Tablets</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        vasofresh 10 mg tablet contains Propranolol, a beta-blocker used to treat high blood pressure, reduce heart-related chest pain, manage irregular heart rhythms, prevent migraines, and reduce essential tremors.
+      </p>
+    </div>
+
+    <!-- Somtril 0.5 -->
+    <div class="product-card sleep Psychiatry neurology bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="IMG-20260209-WA0009~2 (1).jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Somtril Tablets</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        somtril 0.5mg used to treat panic disorder, seizures (epilepsy), and involuntary muscle spasms by calming overactive nerves in the brain.
+      </p>
+    </div>
+
+    <!-- Somtril 0.25 -->
+    <div class="product-card sleep Psychiatry neurology bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="IMG-20260209-WA0005~2 (1).jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Somtril Tablets</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        somtril 0.25mg used to treat panic disorder, seizures (epilepsy), and involuntary muscle spasms by calming overactive nerves in the brain.
+      </p>
+    </div>
+
+    <!-- Somtril 1 -->
+    <div class="product-card sleep Psychiatry neurology bg-white p-6 rounded-xl shadow flex flex-col items-center text-center h-[420px]">
+      <div class="h-[160px] flex items-center justify-center mb-4">
+        <img src="IMG-20260209-WA0004~2 (1).jpg" class="max-h-full object-contain">
+      </div>
+      <h2 class="text-xl font-bold mb-2 min-h-[56px]">Somtril Tablets</h2>
+      <p class="text-gray-700 text-sm line-clamp-4">
+        somtril 0.1mg used to treat panic disorder, seizures (epilepsy), and involuntary muscle spasms by calming overactive nerves in the brain.
+      </p>
+    </div>
+</div>
+
+</div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-gradient-to-r from-slate-900 to-slate-800 text-gray-300 pt-14 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="logo.jpg" class="w-12 h-12 rounded-lg" alt="Maxso Logo">
+        <div>
+          <h2 class="text-white text-xl font-bold">Maxso</h2>
+          <p class="text-sm text-gray-400">Pharmaceutical</p>
+        </div>
+      </div>
+      <p class="text-sm text-gray-400">
+        Your trusted partner in health and wellness since 2025.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-white">Home</a></li>
+        <li><a href="about.html" class="hover:text-white">About</a></li>
+        <li><a href="services.html" class="hover:text-white">Services</a></li>
+        <li><a href="products.html" class="hover:text-white">Products</a></li>
+        <li><a href="divisions.html" class="hover:text-white">Division</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold mb-4">Contact</h3>
+      <p class="text-sm">📞 9840991928</p>
+      <p class="text-sm">📧 maxsopharmaceutical@gmail.com</p>
+      <p class="text-sm">📍 Nehru Colony, Pazhavanthangal</p>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold mb-4">Hours</h3>
+      <p class="text-sm">Mon–Fri: 8 AM – 8 PM</p>
+      <p class="text-sm">Sat–Sun: 9 AM – 6 PM</p>
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
+    © 2025 Maxso Pharmaceutical. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- FILTER SCRIPT -->
+<script>
+const buttons = document.querySelectorAll(".category-btn");
+const products = document.querySelectorAll(".product-card");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    buttons.forEach(btn => btn.classList.replace("bg-blue-600","bg-gray-200"));
+    button.classList.replace("bg-gray-200","bg-blue-600");
+
+    const category = button.dataset.category;
+    products.forEach(product => {
+      product.classList.toggle("hidden",
+        category !== "all" && !product.classList.contains(category)
+      );
+    });
+  });
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

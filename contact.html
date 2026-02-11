@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxso Pharmaceutical</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+    <!-- Logo + Company Name -->
+    <div class="flex items-center gap-3">
+      <img src="logo.jpg" 
+           alt="Maxso Logo"
+           class="w-12 h-12 object-contain">
+      <h1 class="text-2xl font-bold text-blue-700">
+        Maxso Pharmaceutical
+      </h1>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <a href="index.html" class="hover:text-blue-700">Home</a>
+      <a href="about.html" class="hover:text-blue-700">About</a>
+      <a href="products.html" class="hover:text-blue-700">Products</a>
+<a href="divisions.html" class="hover:text-blue-700">divisions</a>
+      <a href="service.html" class="hover:text-blue-700">Service</a>
+      <a href="contact.html" class="text-blue-700 font-semibold hover:text-blue-700">Contact</a>
+    </nav>
+
+    <!-- Mobile Kebab Button -->
+    <button id="menu-btn" class="md:hidden text-3xl text-blue-700">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 font-medium text-gray-700">
+    <a href="index.html" class="block">Home</a>
+    <a href="about.html" class="block">About</a>
+    <a href="products.html" class="block">Products</a>
+     <a href="divisions.html" class="block">divisions</a>
+    <a href="service.html" class="block">Service</a>
+    <a href="contact.html" class="text-blue-700 font-semibold">Contact</a>
+  </div>
+</header>
+
+<!-- Script for Mobile Menu -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+    </script>
+
+
+</header>
+<div class="grid grid-cols-1 gap-8">
+
+  <!-- Phone Card -->
+  <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition text-center">
+    <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-2xl">
+      📞
+    </div>
+    <h3 class="text-lg font-semibold mb-2">Phone Number/ telephone number</h3>
+    <p class="text-gray-600">9840991928/ +91 44 4691 1364</p>
+  </div>
+
+  <!-- Email Card -->
+  <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition text-center">
+    <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-2xl">
+      📧
+    </div>
+    <h3 class="text-lg font-semibold mb-2">E-Mail</h3>
+    <p class="text-gray-600">maxsopharmaceutical@gmail.com</p>
+  </div>
+
+  <!-- Location Card -->
+  <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition text-center">
+    <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-2xl">
+      📍
+    </div>
+    <h3 class="text-lg font-semibold mb-2">Location</h3>
+    <p class="text-gray-600">
+      No A-1, 18th Street,<br>
+      Nehru Colony, Pazhavanthangal, Chennai-600114, Tamil Nadu, India
+    </p>
+  </div>
+
+</div>
+<footer class="bg-gradient-to-r from-slate-900 to-slate-800 text-gray-300 pt-14 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <!-- COMPANY -->
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="logo.jpg"
+             class="w-12 h-12 rounded-lg"
+             alt="Maxso Logo">
+
+        <div>
+          <h2 class="text-white text-xl font-bold">Maxso</h2>
+          <p class="text-sm text-gray-400">Pharmaceutical</p>
+        </div>
+      </div>
+
+      <p class="text-sm leading-relaxed text-gray-400">
+        Your trusted partner in health and wellness.
+        Providing quality pharmaceutical services since 2025.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-white">Home</a></li>
+        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+        <li><a href="services.html" class="hover:text-white">Services</a></li>
+        <li><a href="products.html" class="hover:text-white">Products</a></li>
+        <li><a href="divisons.html" class="hover:text-white">Divsions</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Contact Info</h3>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-3 items-start">
+          📞 <span>9840991928/ +91 44 4691 1364</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          📧 <span>maxsopharmaceutical@gmail.com</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          📍 <span>No a-1, 18th Street, Nehru Colony, Pazhavanthangal, Chennai-600114, India</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- OPENING HOURS -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Opening Hours</h3>
+      <ul class="space-y-3 text-sm">
+        <li>🕒 Monday – Friday<br>
+          <span class="text-gray-400">8:00 AM – 8:00 PM</span>
+        </li>
+        <li>🕒 Saturday – Sunday<br>
+          <span class="text-gray-400">9:00 AM – 6:00 PM</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
+    © 2025 Maxso Pharmaceutical. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
