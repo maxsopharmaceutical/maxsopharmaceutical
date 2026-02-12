@@ -305,12 +305,34 @@
   </div>
 
   <!-- BOTTOM -->
-  <div class="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
-    © 2025 Maxso Pharmaceutical. All Rights Reserved.
-  </div>
+   </div>
+<p class="text-center text-sm mt-6">
+  © <span id="year"></span> Maxso Pharmaceutical. All Rights Reserved.
+</p>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </footer>
-<div id="navbar"></div>
-<div id="navbar"></div>
+<script>
+const buttons = document.querySelectorAll(".category-btn");
+const products = document.querySelectorAll(".product-card");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    buttons.forEach(btn => btn.classList.replace("bg-blue-600","bg-gray-200"));
+    button.classList.replace("bg-gray-200","bg-blue-600");
+
+    const category = button.dataset.category;
+    products.forEach(product => {
+      product.classList.toggle("hidden",
+        category !== "all" && !product.classList.contains(category)
+      );
+    });
+  });
+});
+</script>
+
 
 
 
