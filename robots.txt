@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://maxsopharmaceutical.com/sitemap.xml
+disallow:/*m=1
